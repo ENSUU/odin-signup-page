@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;700&display=swap');
 
 :root {
-    --yellow-color: #FBECB2;
-    --black: black; 
+    --main-color: #FBECB2;
+    --darker-main-color: #ffcf117c; 
+    --secondary-color: rgb(248, 248, 248); 
+    --white: #ffff;
+    --text-color: black; 
     --font-family: 'Playpen Sans', cursive;
 }
 
@@ -17,12 +20,13 @@ fieldset {
     border: none;
     display: flex; 
     flex-direction: column;
+    padding: 0;
+    margin-right: 60px;
 }
 
 .logo-section {
-    background-color: var(--yellow-color);
-    color: var(--white);
-    width: 30vw;
+    background-color: var(--main-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -33,7 +37,8 @@ fieldset {
     align-items: center;
     justify-content: center;
     margin-top: 235px;
-    width: 100%;
+    width: clamp(320px, 38vw, 38vw);
+    background-color: var(--darker-main-color);
 }
 
 .logo-section-content > h1 {
@@ -44,19 +49,78 @@ fieldset {
 #logo {
     width: 50px;
     height: 50px;
-    color: var(--white);
+    color: var(--text-color);
 }
 
 .form-section {
     display: flex; 
     flex-direction: column;
     justify-content: center; 
+    background-color: var(--secondary-color);
 }
 
 .form-inputs {
     display: flex; 
+    margin-bottom: 20px;
 }
 
-fieldset label, fieldset input {
-    margin: 2px;
+fieldset input {
+    margin-bottom: 20px;
+}
+
+.call-to-action-text {
+    padding: 2px 20px;
+    width: 600px;
+    font-size: 1.25rem;
+}
+
+.sign-up-form {
+    box-shadow: 0 8px 6px -6px #777;
+    width: 100vw;
+    background-color: var(--white);
+    padding: 2px 20px;
+}
+
+.sign-up-form > h3 {
+    font-size: 1.25rem;
+}
+
+form label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+form input {
+    height: 20px;
+    width: 220px;
+    padding: 3px;
+}
+
+.sign-up-form-container {
+    margin: 0 15px;
+}
+
+.form-section-container {
+    margin: 60px auto;
+}
+
+.cta-inputs {
+    padding: 20px;
+}
+
+.cta-inputs > button {
+    background-color: var(--darker-main-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 15px 45px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.cta-inputs > p a {
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
 }

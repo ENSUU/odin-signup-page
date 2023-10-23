@@ -14,14 +14,16 @@
         </div>
     </div>
     <div class="form-section">
-        <h3>
-            This is not a real online service! You know you need something like this in your life
-            to help you realize your deepest dreams. Sign up <em>now</em> to get started. 
-        </h3>
-        <h3>You <em>know</em> you want to.</h3>
-        <div class="sign-up-form-container">
-            <h3>Let's do this!</h3>
-            <form class="sign-up-form" action="" method="">
+        <div class="form-section-container">
+            <div class="call-to-action-text">
+                <h3>
+                    This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams. Sign up <em>now</em> to get started. 
+                </h3>
+                <h3>You <em>know</em> you want to.</h3>
+            </div>
+            <form id="sign-up-form" class="sign-up-form" action="" method="">
+                <h3>Let's do this!</h3>
                 <div class="form-inputs">
                     <fieldset>
                         <label for="first-name">FIRST NAME</label>
@@ -44,9 +46,11 @@
                         <input type="password" id="confirm-password" name="confirm-password">
                     </fieldset>
                 </div>
-                <button type="submit">Create Account</button>
             </form>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <div class="cta-inputs">
+                <button type="submit" form="sign-up-form">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
